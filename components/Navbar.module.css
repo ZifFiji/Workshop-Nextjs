@@ -1,0 +1,9 @@
+@tailwind utilities;
+
+@layer utilities {
+  @reference text-blue-500, font-semibold, decoration-wavy, underline;
+}
+
+.link {
+  @apply decoration-wavy underline font-semibold text-blue-500;
+}

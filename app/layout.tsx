@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "@/components/theme-provider";
+import { NavigationMenuDemo } from "@/components/Navbar"; 
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -9,6 +11,11 @@ const geistSans = Geist({
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+const JetBrainsMono = JetBrains_Mono({
+  variable: "--font-jetbrains-mono",
   subsets: ["latin"],
 });
 
@@ -25,10 +32,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${JetBrainsMono.variable} ${geistMono.variable} font-[JetBrains_Mono] antialiased light style={{color-scheme:"light"}}`}
+
       >
-        {children}
+        <ThemeProvider attribute="class" defaultTheme="system">
+          <NavigationMenuDemo/>
+            {children}
+        </ThemeProvider>      
       </body>
+
     </html>
   );
 }
