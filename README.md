@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Header avec Navigation
 
-## Getting Started
+Logo/nom personnel
+Menu de navigation (Accueil, À propos, Projets, Contact)
+Mode sombre/clair avec shadcn Toggle
 
-First, run the development server:
+Page À Propos
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Biographie personnelle
+Compétences avec shadcn Badge
+Timeline de parcours avec shadcn Card
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Galerie de Projets
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Minimum 3 projets (même fictifs)
+shadcn Card pour chaque projet
+Images, description, technologies utilisées
+Liens GitHub/démo avec shadcn Button
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Section Compétences
 
-## Learn More
+Technologies maîtrisées
+Barres de progression ou badges
+Utilisation de shadcn Progress ou Badge
 
-To learn more about Next.js, take a look at the following resources:
+Formulaire de Contact
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+shadcn Form avec validation
+Champs : nom, email, message
+shadcn Input et Textarea
+Gestion des erreurs avec shadcn Alert
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Footer Professionnel
 
-## Deploy on Vercel
+Liens réseaux sociaux
+Copyright
+Liens rapides navigation
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Design Responsive
+
+Mobile-first avec Tailwind
+Breakpoints adaptés
+Navigation mobile avec shadcn Sheet
+
+
+Animations et Interactions
+
+Hover effects sur les cards
+Transitions smooth
+shadcn Hover Card pour détails projets
+
+
+Page 404 Personnalisée
+
+Design cohérent avec le site
+Message d'erreur friendly
+Bouton retour accueil avec shadcn Button
